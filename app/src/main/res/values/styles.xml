@@ -1,22 +1,20 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme"
+         parent="Theme.AppCompat.Light.NoActionBar">
+
     <!--    Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="CustomSeekBar" parent="android:Widget.SeekBar">
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:layout_width">300px</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">30px</item>
-        <item name="android:paddingRight">10px</item>
-        <item name="android:thumb">@drawable/seekbar_tumb_rect</item> <!-- ツマミに利用するdrawableを指定 -->
-        <item name="android:max">5</item> <!-- 最大値。SeekBar全体がこの値で等分される -->
-        <item name="android:progress">2</item> <!-- ツマミの初期位置 -->
-    </style>
+   <style name="AppTheme.MusicNavigationBar"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+       <item name="colorPrimary">@color/colorPrimary</item>
+       <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+       <item name="colorAccent">@color/colorAccent</item>
+   </style>
 
 </resources>
