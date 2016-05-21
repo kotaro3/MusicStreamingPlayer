@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#222222"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,10 +12,46 @@
     tools:context="com.example.kotaro.musicstreamingapp.MainActivity"
     android:weightSum="1">
     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@mipmap/show2"
+        />
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:src="@mipmap/ic_launcher"
         />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressBackgroundTint="#ffffff"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="left"
+        android:text="0:00"
+        android:textColor="#eeeeee"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="-0:00"
+        android:textColor="#eeeeee" />
+</LinearLayout>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,30 +77,12 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:text="0:00"
-            android:textColor="#eeeeee"
-            />
-        <SeekBar
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:progressBackgroundTint="#ffffff"
-        />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0:00"
-            android:textColor="#eeeeee"
-            />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         >
         <ImageButton
@@ -111,4 +129,10 @@
             android:scaleType="centerInside"
             />
     </LinearLayout>
+    <SeekBar
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:progressBackgroundTint="#ffffff"
+        />
+
 </LinearLayout>
