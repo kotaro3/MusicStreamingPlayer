@@ -64,9 +64,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:text="Artist"
-        android:textColor="#ffffff"
+        android:textColor="#999999"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
         />
@@ -88,7 +88,7 @@
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="30dp"
             android:src="@mipmap/random"
             android:background="@null"
@@ -96,7 +96,7 @@
         <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
             android:src="@mipmap/rewind"
             android:background="@null"
@@ -113,7 +113,7 @@
          <ImageButton
              android:layout_width="40dp"
              android:layout_height="40dp"
-             android:layout_marginLeft="30dp"
+             android:layout_marginLeft="50dp"
              android:src="@mipmap/forward"
              android:layout_marginTop="20dp"
              android:background="@null"
@@ -122,7 +122,7 @@
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:src="@mipmap/repeat"
             android:background="@null"
